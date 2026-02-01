@@ -1,3 +1,0 @@
-Sitemap: http://wallpaperqr.com/sitemap.xml
-User-agent: *
-Disallow:

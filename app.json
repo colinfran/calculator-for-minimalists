@@ -1,35 +1,44 @@
 {
   "expo": {
-    "name": "Calculator for Minimalists",
+    "name": "calculator-for-minimalists",
     "slug": "calculator-for-minimalists",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "orientation": "portrait",
-    "icon": "./assets/images/appicon.png",
-    "scheme": "calculator-for-minimalists",
+    "icon": "./assets/images/icon.png",
+    "scheme": "calculatorforminimalists",
     "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "newArchEnabled": true,
     "ios": {
-      "supportsTablet": false,
-      "bundleIdentifier": "com.minimalistic-calculator"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+      "supportsTablet": true,
+      "bundleIdentifier": "com.minimalistic-calculator",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
-    "web": {
-      "favicon": "./assets/images/favicon.png"
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "c33418ce-7365-424e-9364-34672835e2f8"
+      }
     }
   }
 }
